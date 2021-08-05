@@ -1,0 +1,26 @@
+package day1;
+
+import java.util.Arrays;
+
+public class IsPalindrom {
+
+	public static void main(String[] args) {
+		int[] arr= {121,212,234,34543,123,876};
+		StringBuffer palindromNos=new StringBuffer();
+		
+		for(int x:arr) {
+			//Arrays.toString(x);
+			StringBuffer sb=new StringBuffer();
+			sb.append(x);
+			String str=sb.toString();
+			sb.reverse();
+				if(str==sb.toString()) {
+				palindromNos.append(str);
+				}
+				
+			}
+		System.out.println(palindromNos.toString());
+			
+		}
+
+	}

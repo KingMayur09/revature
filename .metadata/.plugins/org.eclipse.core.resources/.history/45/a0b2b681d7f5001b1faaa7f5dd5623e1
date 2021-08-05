@@ -1,0 +1,20 @@
+package day4;
+
+public class bill implements Comparable<bill> {
+	private String item_name;
+	private float price;
+	private int qty;
+	private float line_total;
+	
+	
+	public bill(String item_Name, float price, int qty, float line_total) {
+		super();
+		Item_Name = item_Name;
+		this.price = price;
+		Qty = qty;
+		Line_total = line_total;
+	}
+	
+	
+
+}

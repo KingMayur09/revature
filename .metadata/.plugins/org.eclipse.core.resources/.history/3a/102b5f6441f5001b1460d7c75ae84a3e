@@ -1,0 +1,24 @@
+package day1;
+
+import java.util.Arrays;
+
+public class Remove_Duplicate {
+
+	public static void main(String[] args) {
+		int[] da= {11,2,3,11,2,3,4,11,4};
+		int[] rd= new int[da.length];
+		Arrays.sort(da);
+		int j=1;
+		rd[0]=da[0];
+		for (int i = 0; i < da.length; i++) {
+			if(da[i]!=da[i+1]) {
+				rd[j]=da[i];
+				j++;
+			}
+		}
+		System.out.println("removed duplicate array :"+rd.toString());
+		
+
+	}
+
+}

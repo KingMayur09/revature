@@ -1,0 +1,21 @@
+package day4;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Arrays;
+
+public class ExploreOtherStreamfunction {
+
+	public static void main(String[] args) {
+		List<Integer> list=  Arrays.asList(12,18,36,48,60,96,102);
+		boolean check=list.stream().allMatch(e->e%3==0);
+		System.out.println(check);
+	}
+
+}
+
+/*allMatch(Predicate predicate)
+ * function returns true if either all elements
+of the stream match the provided predicate or 
+the stream is empty, otherwise false.
+ */

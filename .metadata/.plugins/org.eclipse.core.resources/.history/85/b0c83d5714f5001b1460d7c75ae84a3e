@@ -1,0 +1,21 @@
+package day1;
+import java.util.Arrays;
+
+public class Nth_Max_Array {
+
+	public static void main(String[] args) {
+		int[] arr= {11,12,12,34,32,45,11,22,55,43,98};
+		int[] arrR=new int[arr.length];
+		//Arrays.fill(arrR, 0);
+		Arrays.sort(arr);
+		//System.out.println(Arrays.toString(arr));
+		for (int i = 0; i < arr.length-1; i++) {
+			if(arr[i]!=arr[i+1]) {
+				arrR[i+1]=arr[i+1];
+			}
+		}
+		System.out.println(Arrays.toString(arrR));
+
+	}
+
+}
